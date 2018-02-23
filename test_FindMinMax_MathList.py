@@ -15,28 +15,32 @@ def test_exceptions():
 
 
 def test_positive_numbers():
-    from assignment04 import FindMinMax
+    from mathlist import MathList
     list1 = list(range(1, 11))
-    assert FindMinMax(list1) == (1, 10)
+    x = MathList(list1)
+    assert x.min_max == (1, 10)
 
 
 def test_negative_numbers():
-    from assignment04 import FindMinMax
+    from mathlist import MathList
     list2 = list(range(-12, -1))
-    assert FindMinMax(list2) == (-12, -2)
+    x = MathList(list2)
+    assert x.min_max == (-12, -2)
 
 
 def test_floats():
-    from assignment04 import FindMinMax
+    from mathlist import MathList
     list3 = np.arange(-1.0, 1.1, 0.1)
-    tup = FindMinMax(list3)
+    x = MathList(list3)
+    tup = x.min_max
     assert abs(tup[0] + 1.0) < 0.00001
     assert abs(tup[1] - 1.0) < 0.00001
 
 
 def test_fractions():
-    from assignment04 import FindMinMax
+    from mathlist import MathList
     list4 = np.arange(1/3, 5/3, 1/3)
-    tup = FindMinMax(list4)
+    x = MathList(list4)
+    tup = x.min_max
     assert abs(tup[0] - 1/3) < 0.00001
     assert abs(tup[1] - 5/3) < 0.00001

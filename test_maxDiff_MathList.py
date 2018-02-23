@@ -1,12 +1,14 @@
 def test_MaxDiffr():
-    from assignment04 import maxFindDiff
+    from mathlist import MathList 
     listV = [1, 2, 3, 6, 10]
-    maxxNum = maxFindDiff(listV)
+    x = MathList(listV)
+    maxxNum = x.max_diff
     assert maxxNum == 4
-    findPos = maxFindDiff(listV)
+    findPos = x.max_diff
     assert findPos > 0
     listV2 = [1.1, 2.2, 3.6, 8.9]
-    maxxNumFloat = maxFindDiff(listV2)
+    x2 = MathList(listV2)
+    maxxNumFloat = x2.max_diff
     assert maxxNumFloat == 5.3
 
 

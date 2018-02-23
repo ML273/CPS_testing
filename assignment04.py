@@ -5,7 +5,7 @@ def main(list1, list2, list3):
 
 
 def maxFindDiff(in1):
-    from maxDifference02 import maxFindDiff
+    from maxDifference import maxFindDiff
     out1 = maxFindDiff(in1)
     return out1
 
