@@ -7,16 +7,16 @@ class MathList():
     floats
     """
 
-    def __init__(self, list1=[1,2]):
+    def __init__(self, list1=[1, 2]):
         self.lists = list1
-        self.sum_all = None #no value yet
+        self.sum_all = None  # no value yet
         """float: Provides the sum of the input list"""
         self.min_max = None
         """float: Provides the minimum and maximum of the list as a tuple"""
         self.max_diff = None
         """float: Provides the greatest difference between\
         two adjacent numbers in a list"""
-        self.summation() #call the functions
+        self.summation()  # call the functions
         self.findMinMax()
         self.maxDiff()
 
@@ -60,7 +60,8 @@ class MathList():
         :param list: Input that is a list of numbers. Can be integers or \
         floats
 
-        :returns: the maximum difference between two adjacent numbers in the list
+        :returns: the maximum difference between two adjacent numbers \
+        in the list
         :raises ImportError: an error is raised if math cannot be found
         :raises TypeError: an error is raised if the data input contains \
         combined data types or a string instead of integers or a list

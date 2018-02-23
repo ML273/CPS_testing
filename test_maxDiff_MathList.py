@@ -1,5 +1,5 @@
 def test_MaxDiffr():
-    from mathlist import MathList 
+    from mathlist import MathList
     listV = [1, 2, 3, 6, 10]
     x = MathList(listV)
     maxxNum = x.max_diff
